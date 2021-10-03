@@ -1,0 +1,26 @@
+﻿<Window x:Class="Wpf_UI.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Wpf_UI"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="350" Width="525">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+<Button x:Name="addStudentButton" Content="Add Student" 
+Margin="10" FontSize="30" Grid.Row="0" Click="addStudentButton_Click"/>
+
+<Button x:Name="addCourseButton" Content="Add Course" 
+Margin="10" FontSize="30" Grid.Row="1" Click="addCourseButton_Click"/>
+
+<Button x:Name="addCourseTOstudentButton" Content="Add Course To Student" 
+Margin="10" FontSize="30" Grid.Row="2" Click="addCourseTOstudentButton_Click"/>
+
+
+    </Grid>
+</Window>
